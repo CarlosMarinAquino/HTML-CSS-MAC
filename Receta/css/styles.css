@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: clamp(1rem, 2.5vw, 1.5rem);
+	line-height: 1.5;
+	max-width: 1200px;
+	margin: 0 auto;
+	color: rgb(0, 0, 0);
+}
+main{
+	margin: 0;
+	vertical-align: baseline;
+	background-color: antiquewhite;
+	padding: 3rem;
+}
+img {
+	max-width: 100%;
+}
+
+.Header {
+	text-align: center;
+	border-bottom: 8px double #f9f9f9;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.Eslogan {
+	font-size: 2rem;
+	text-align: left;
+}
+
+.ImagenDescripción {
+	position: relative;
+}
+
+.ImagenCaliente {
+	border: 6px solid #e8cfa9;
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.LogoContenedor {
+	display: block;
+}
+
+.Descripción {
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 0.5rem;
+	right: 1rem;
+	padding: 3px;
+	background-color: #222;
+	color: #e4e4e4;
+}
+
+.IntroTexto {
+	font-size: 1.8rem;
+	font-style: italic;
+}
+
+.ElaboraciónPasos li {
+	padding: 0.4rem 0;
+}
+
+.ElaboraciónPasos li:after {
+	content: "✼";
+	display: block;
+	text-align: center;
+	margin: 1rem 0 0.5rem 0;
+	color: #eee;
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		border-left: 4px solid #f9f9f9;
+		border-right: 4px solid #f9f9f9;
+		padding: 1rem 2rem;
+	}
+
+	.IntroContenedor {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.ImagenDescripción,
+	.IntroTexto {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.IntroTexto {
+		padding: 0.5rem;
+		font-size: 2.5rem;
+		text-align: left;
+		position: relative;
+	}
+
+	.Ingredientes {
+		font-size: 0.9rem;
+		float: right;
+		padding: 1rem;
+		margin: 0 1rem 0.5rem 2rem;
+		border-radius: 3px;
+		max-width: 500px;
+		background-color: #ffffdf;
+		border: 2px solid #e8cfa9;
+	}
+
+	.Ingredientes h3 {
+		margin: 0;
+	}
+}
+@media screen and (min-width: 320px) and (max-width:799px){
+	body{
+		font-size: clamp(0.75rem, 2.5vw, 1.2rem);;
+	}
+	.Eslogan{
+			font-size: 2rem;
+		}
+	.IntroTexto{
+		font-size: 1.2rem;
+		}
+	.Ingredientes{
+		background-color: #ffffdf;
+		border: 2px solid #e8cfa9;
+		padding-left: 1rem;
+	}
+}
