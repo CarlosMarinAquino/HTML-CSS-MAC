@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  max-width: 70rem;
+  margin: 0 auto;
+  background-color: #f89dc7;
+  color: #585858;
+}
+
+h1 {
+  padding-left: 2rem;
+  font-family: 'Satisfy', cursive;
+  color: #FFFFFF;
+}
+
+h4 {
+  text-align: center;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-auto-flow: row;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+  padding: 5rem 0;
+}
+
+.producto {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 2px 1px #585858;
+          box-shadow: 2px 2px 2px 1px #585858;
+  border-radius: 15px;
+}
+
+.producto-img {
+  padding-top: 2rem;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 600px;
+}
+
+.producto-img img {
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #58585856;
+  border-radius: 15px;
+}
+
+details {
+  cursor: pointer;
+}
+
+details summary {
+  text-transform: uppercase;
+  color: #ff0e7e;
+  padding: 1rem 2rem;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+}
+
+details .texto {
+  font-size: 1rem;
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.contacto h5 {
+  color: #000000;
+}
+
+.contacto i {
+  color: #0099ff;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=Vestidos.css.map */
