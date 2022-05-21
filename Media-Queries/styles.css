@@ -1,0 +1,78 @@
+body {
+  background-color: #f8f5f5;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+}
+
+p {
+  font-weight: bolder;
+  padding: 0.25rem 1rem;
+}
+
+.contenedor {
+  margin: 3rem auto;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 5px #c0c0c0c0;
+          box-shadow: 0 0 10px 5px #c0c0c0c0;
+  padding: 4rem 0;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.img-contenedor {
+  background-color: #e9e9e9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  max-width: 200px;
+  max-height: 500px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 250px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1500x) {
+  body {
+    background-color: #00887d;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
